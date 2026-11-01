@@ -35,7 +35,7 @@ describe('Add New policy', () => {
     //visit login page
     Login.visit()
 
-    //Wait for sometime
+    //Applying wait for five seconds because we need to manually bypass the custom slider before login
     cy.wait(5000);
 
     //Enter email and password

@@ -31,7 +31,7 @@ describe('Tickets Creation', () => {
 
     login.visit();
 
-    //Wait for sometime
+    //Applying wait for five seconds because we need to manually bypass the custom slider before login
      cy.wait(5000);
 
      //Enter an email & password

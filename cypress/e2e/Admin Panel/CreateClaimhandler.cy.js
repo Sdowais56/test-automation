@@ -24,7 +24,8 @@ it('Add New Claim Handler', () => {
         };
       }
       });
-        
+
+      //Applying wait for five seconds because we need to manually bypass the custom slider before login
     
   cy.wait(5000);
 

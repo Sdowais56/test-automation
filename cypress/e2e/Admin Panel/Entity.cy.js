@@ -37,6 +37,8 @@ describe('Test Entity', () => {
 
     login.visit();
 
+    //Applying wait for five seconds because we need to manually bypass the custom slider before login
+
     //Wait for sometime
     cy.wait(5000);
 

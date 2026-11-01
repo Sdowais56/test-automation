@@ -39,7 +39,7 @@ describe('Plan Creation', () => {
     //Visit login page
     login.visit();
 
-    //Wait for sometime
+    //Applying wait for five seconds because we need to manually bypass the custom slider before login
     cy.wait(5000);
 
     //Enter email and password
