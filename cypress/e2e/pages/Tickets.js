@@ -135,7 +135,8 @@ navto_ticket(){
 
     cy.get('.swal-button').click();
 
-  }  
+  } 
+    
   createticket(insert_ticket){
 
     this.navbar();
