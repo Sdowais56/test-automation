@@ -52,10 +52,13 @@ describe('Test Roles in User Management', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(10).click();
+  // cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(10).click();
+  cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('User Management').click();
 
    //Navigate to Roles screen
-   cy.get('span.menu-item').eq(59).click();
+  // cy.get('span.menu-item').eq(59).click();
+    cy.get('span.menu-item').contains('Roles').click();
+  
 
 
    //Click on New button 

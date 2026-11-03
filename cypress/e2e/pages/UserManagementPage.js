@@ -19,16 +19,21 @@ class UserManagement{
 
 dropdownmenu(){
 
+    /*
     cy.get('.main-menu.menu-light .navigation li.has-sub > a')
     .eq(10)
     .click();
+    */
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('User Management').click();
 }
 
 navigatetouser(){
-
+/*
  cy.get('span.menu-item')
  .eq(57)
  .click();
+ */
+cy.get('span.menu-item').contains('Users').click();
 
 }
 

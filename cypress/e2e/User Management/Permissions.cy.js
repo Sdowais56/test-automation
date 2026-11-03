@@ -46,10 +46,13 @@ describe('Test Permissions in User Management', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(10).click();
+   //cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(10).click();
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('User Management').click();
 
    //Navigate to Permissions screen
-   cy.get('span.menu-item').eq(60).click();
+   //cy.get('span.menu-item').eq(60).click();
+   cy.get('span.menu-item').contains('Permissions').click();
+   
 
    //Click on New button 
    cy.get('button:not(:disabled)').eq(0).click();
