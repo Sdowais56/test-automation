@@ -55,7 +55,7 @@ describe('Test Roles in User Management', () => {
    cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(10).click();
 
    //Navigate to Roles screen
-   cy.get('span.menu-item').eq(57).click();
+   cy.get('span.menu-item').eq(59).click();
 
 
    //Click on New button 

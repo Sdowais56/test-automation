@@ -27,7 +27,7 @@ dropdownmenu(){
 navigatetouser(){
 
  cy.get('span.menu-item')
- .eq(55)
+ .eq(57)
  .click();
 
 }

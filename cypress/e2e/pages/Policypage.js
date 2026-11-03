@@ -23,7 +23,7 @@ dropdownmenu(){
 addpolicy(){
 
      cy.get('span.menu-item')
-     .eq(43)
+     .eq(44)
      .click();
 }
 

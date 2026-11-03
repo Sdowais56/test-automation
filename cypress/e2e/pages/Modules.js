@@ -36,7 +36,7 @@ class Module {
     navtomodule(){
 
         cy.get('span.menu-item')
-        .eq(56)
+        .eq(58)
         .click();
 
     }

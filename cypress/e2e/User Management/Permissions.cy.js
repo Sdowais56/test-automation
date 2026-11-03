@@ -49,10 +49,13 @@ describe('Test Permissions in User Management', () => {
    cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(10).click();
 
    //Navigate to Permissions screen
-   cy.get('span.menu-item').eq(58).click();
+   cy.get('span.menu-item').eq(60).click();
 
    //Click on New button 
    cy.get('button:not(:disabled)').eq(0).click();
+
+   //Wait for sometime
+   cy.wait(2000);
 
    //Enter name 
    cy.get('input#first-name.form-control').type('New permission regression 101');
