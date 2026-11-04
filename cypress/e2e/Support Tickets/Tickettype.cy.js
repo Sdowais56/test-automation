@@ -46,11 +46,15 @@ describe('Ticket Type', () => {
    cy.wait(2000);
 
     //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(1).click();
+ //  cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(1).click();
+     cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Support Tickets').click();
+     
 
 
-   //Navigate to ticket screen
-   cy.get('span.menu-item').eq(4).click();
+   //Navigate to ticket type screen
+  // cy.get('span.menu-item').eq(4).click();
+  cy.get('span.menu-item').contains('Ticket Type').click();
+
 
    //Add new ticket type 
    cy.get('.btn-primary').first().click();

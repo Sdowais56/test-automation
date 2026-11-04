@@ -11,15 +11,22 @@ wait1(){
 }
 dropdown_menu(){
 
+    /*
     cy.get('.main-menu.menu-light .navigation li.has-sub > a')
     .eq(1)
     .click();
+    */
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Support Tickets').click();
 }
 ticket_navigation(){
 
+    /*
     cy.get('span.menu-item')
     .eq(3)
     .click();
+    */
+   cy.get('span.menu-item').contains('Tasks').click();
+
 }
 view_ticket(){
 

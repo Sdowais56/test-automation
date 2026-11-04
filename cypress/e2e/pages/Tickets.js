@@ -17,9 +17,12 @@ wait1(){
 //Click on the dropdown menu 
 
 dropdownmenu(){
+   /*
    cy.get('.main-menu.menu-light .navigation li.has-sub > a')
    .eq(1)
    .click();
+   */
+  cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Support Tickets').click();
 }
 
 
@@ -27,7 +30,8 @@ dropdownmenu(){
 
 navto_ticket(){
 
-    cy.get('span.menu-item').eq(3).click();
+   // cy.get('span.menu-item').eq(3).click();
+   cy.get('span.menu-item').contains('Tickets').click();
 }
    
 

@@ -21,7 +21,7 @@ class claims {
         .eq(1)
         .click();
         */
-       cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Claims').click();
+       cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Support Tickets').click();
     }
 
     navto_support(){
@@ -31,7 +31,7 @@ class claims {
         .eq(1)
         .click();
         */
-       cy.get('span.menu-item').contains('Support').click();
+       cy.get('span.menu-item').contains('Claims').click();
     }
     viewpolicy(){
 
