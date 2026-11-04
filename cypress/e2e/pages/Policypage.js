@@ -15,16 +15,21 @@ class createpolicy {
 
 dropdownmenu(){
 
+    /*
     cy.get('.main-menu.menu-light .navigation li.has-sub > a')
     .eq(7)
     .click();
+    */
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Register policy').click();
 }
 
 addpolicy(){
-
+/*
      cy.get('span.menu-item')
      .eq(44)
      .click();
+     */
+    cy.get('span.menu-item').contains('Add new policy').click();
 }
 
 wait1(){
