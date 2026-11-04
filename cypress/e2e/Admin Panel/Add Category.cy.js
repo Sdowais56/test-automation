@@ -60,10 +60,14 @@ describe('Plan Category', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+   //cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
+
 
    //Navigate to Category screen
-   cy.get('span.menu-item').eq(13).click();
+  // cy.get('span.menu-item').eq(13).click();
+  cy.get('span.menu-item').contains('Category').click();
+
 
 
 

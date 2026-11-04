@@ -24,17 +24,23 @@ wait1(){
 
 dropdownmenu(){
 
+    /*
     cy.get('.main-menu.menu-light .navigation li.has-sub > a')
     .eq(4)
     .click();
+    */
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
 
 }
 
 navtoentity(){
 
+    /*
     cy.get('span.menu-item')
     .eq(16)
     .click();
+    */
+   cy.get('span.menu-item').contains('Entity').click();
 }
 
 addentity(){

@@ -18,16 +18,24 @@ wait1(){
 
 dropdownmenu(){
 
+    /*
+
     cy.get('.main-menu.menu-light .navigation li.has-sub > a')
     .eq(4)
     .click();
+    */
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
+  
 }
 
 plannavigation(){
 
+    /*
 cy.get('span.menu-item')
 .eq(12)
 .click();
+*/
+ cy.get('span.menu-item').contains('Plan').click();
 }
 
 addplannavigation(){

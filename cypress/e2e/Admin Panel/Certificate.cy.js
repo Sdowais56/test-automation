@@ -47,10 +47,14 @@ describe('Test Certificate Management', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+  // cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+  cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
+  
 
    //Navigate to Certificate Management screen
-   cy.get('span.menu-item').eq(28).click();
+   //cy.get('span.menu-item').eq(28).click();
+   cy.get('span.menu-item').contains('Certificate Management').click();
+   
 
    //Click on New Button 
  cy.window().then((win) => {

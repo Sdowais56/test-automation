@@ -62,10 +62,13 @@ describe('Test Underwriter', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+   //cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
 
    //Navigate to underwriter screen
-   cy.get('span.menu-item').eq(11).click();
+   //cy.get('span.menu-item').eq(11).click();
+   cy.get('span.menu-item').contains('Underwriter').click();
+
 
    //Navigate to Add underwriter
    cy.get('.btn-secondary').click();

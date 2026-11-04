@@ -50,10 +50,12 @@ describe('Test Whatsapp Chat', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(6).click();
+  // cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(6).click();
+   cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('WhatsApp Support').click();
 
    //Navigate to Whatsapp Chat screen
-   cy.get('span.menu-item',{ timeout: 10000 }).eq(41).should('be.visible').click();
+   //cy.get('span.menu-item',{ timeout: 10000 }).eq(41).should('be.visible').click();
+   cy.get('span.menu-item').contains('Chat').click();
 
    //Wait for sometime
    cy.wait(2000);

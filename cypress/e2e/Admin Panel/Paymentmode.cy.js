@@ -46,10 +46,14 @@ describe('Test Payment mode', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+ //  cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+ cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
+
 
    //Navigate to Payment mode screen
-   cy.get('span.menu-item',{ timeout: 10000 }).eq(17).should('be.visible').click();
+  // cy.get('span.menu-item',{ timeout: 10000 }).eq(17).should('be.visible').click();
+   cy.get('span.menu-item',{ timeout: 10000 }).contains('Payment Modes').click();
+
 
 
    //Click on add button 

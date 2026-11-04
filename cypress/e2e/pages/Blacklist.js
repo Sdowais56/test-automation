@@ -22,15 +22,22 @@ wait1(){
 
 dropdownmenu(){
 
+    /*
     cy.get('.main-menu.menu-light .navigation li.has-sub > a')
     .eq(4)
     .click();
+    */
+ cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
+    
 }
 navto_blacklist(){
 
+    /*
     cy.get('span.menu-item')
     .eq(26)
     .click();
+    */
+  cy.get('span.menu-item').contains('Black List').click(); 
 }
 add_new(){
 

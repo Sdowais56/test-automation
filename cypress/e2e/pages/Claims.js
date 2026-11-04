@@ -16,17 +16,22 @@ class claims {
 
     dropdownmenu(){
 
+        /*
         cy.get('.main-menu.menu-light .navigation li.has-sub > a')
         .eq(1)
         .click();
+        */
+       cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Claims').click();
     }
 
     navto_support(){
 
+        /*
         cy.get('span.menu-item')
         .eq(1)
         .click();
-
+        */
+       cy.get('span.menu-item').contains('Support').click();
     }
     viewpolicy(){
 

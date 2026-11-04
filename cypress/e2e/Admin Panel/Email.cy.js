@@ -46,10 +46,14 @@ describe('Test Email Template', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+  // cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(4).click();
+  cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('Admin').click();
+
 
    //Navigate to Email template screen
-   cy.get('span.menu-item').eq(27).click();
+  // cy.get('span.menu-item').eq(27).click();
+  cy.get('span.menu-item').contains('Email Templates').click();
+
 
    //Click on Add Email template 
    cy.get('.btn-primary').first().click();
