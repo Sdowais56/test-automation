@@ -46,10 +46,14 @@ describe('Test View Policy', () => {
    cy.wait(2000);
 
    //Click on the dropdown menu 
-   cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(5).click();
+ //  cy.get('.main-menu.menu-light .navigation li.has-sub > a').eq(5).click();
+ cy.get('.main-menu.menu-light .navigation li.has-sub > a').contains('All Policies').click();
+
 
    //Navigate to View Policies screen
-   cy.get('span.menu-item').eq(32).click();
+ //  cy.get('span.menu-item').eq(32).click();
+ cy.get('span.menu-item').contains('Policies').click();
+
 
 //Click on view policy and opening in same tab
 

@@ -31,7 +31,7 @@ class claims {
         .eq(1)
         .click();
         */
-       cy.get('span.menu-item').contains('Claims').click();
+       cy.get('span.menu-item').contains('Support').click();
     }
     viewpolicy(){
 

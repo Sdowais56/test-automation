@@ -25,7 +25,7 @@ ticket_navigation(){
     .eq(3)
     .click();
     */
-   cy.get('span.menu-item').contains('Tasks').click();
+   cy.get('span.menu-item').contains('Tickets').click();
 
 }
 view_ticket(){
